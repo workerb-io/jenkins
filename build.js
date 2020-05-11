@@ -3,7 +3,7 @@ open("http://jenkins.workerb.io/")
 var job_title = args[0]
 
 if (!job_title) {
-    prompt("provide a valid name for your new job")
+    job_title = prompt("provide a valid name for your new job")
 }
 
 click('New Item')
