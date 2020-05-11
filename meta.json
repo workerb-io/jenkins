@@ -1,0 +1,27 @@
+{
+    "name": "Jenkins",
+    "sites": [
+      "https://www.jenkins.io/"
+    ],
+    "description": "workerB actions for jenkins.io",
+    "scripts": [
+      {
+        "name": "build",
+        "file": "build.js",
+        "type": "command",
+        "description": "create a new project"
+      },
+      {
+        "name": "newBuild",
+        "file": "newBuild.js",
+        "type": "command",
+        "description": "create a new build under a given project"
+      },
+      {
+        "name": "schedule",
+        "file": "schedule.js",
+        "type": "command",
+        "description": "schedule a jenkins project with the provided cron_expression"
+      }
+    ]
+}
