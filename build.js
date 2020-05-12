@@ -10,8 +10,8 @@ click('New Item')
 
 open("http://jenkins.workerb.io/view/all/newJob")
 click('#name','by_query_selector')
-type(job_title,'#name','by_query_selector')
-click('/html/body/div[4]/div/div/div/div/form/div[2]/div[1]/ul/li[1]/div[1]','by_xpath')
+type(job_title, 'Enter an item name',{method: 'by_label'})
+click('.hudson_model_FreeStyleProject', { method: 'by_query_selector'})
 click('OK')
 
 open("http://jenkins.workerb.io/job/"+job_title+"/configure")
