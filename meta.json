@@ -3,6 +3,9 @@
     "sites": [
       "https://www.jenkins.io/"
     ],
+    "tags": [
+      "jenkins"
+    ],
     "description": "workerB actions for jenkins.io",
     "scripts": [
       {
